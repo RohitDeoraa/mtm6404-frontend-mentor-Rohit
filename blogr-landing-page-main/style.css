@@ -1,0 +1,81 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(356, 100%, 66%);
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: hsl(355, 100%, 74%);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+    }
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: hsl(356, 100%, 66%);
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: hsl(356, 100%, 66%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+/* Responsiveness for mobile screens */
+@media(max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+}
